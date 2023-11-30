@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: linear-gradient(45deg, rgba(255, 166, 0, 0.652), rgba(139, 0, 0, 0.77));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: 2px solid yellow;*/
+    position: relative;
+}
+
+.container .icon span i{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 80vh;
+}
+
+.logo{
+    margin: 5px auto;
+    font-size: 2px;
+}
+
+.box-1{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vh;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.text{
+    font-size: 10px;
+    margin: 10px 0 0 0;
+    color: silver;
+}
+
+.box-2{
+    border-radius: 20px;
+}
+
+.image img{
+    width: 25rem;
+    border-radius: 0 20px 20px 0;
+    height: 80vh;
+}
+
+.sign-container{
+    border: 2px solid rgba(0, 0, 0, 0.426);
+    cursor: pointer;
+    width: 60%;
+    margin-top: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.sign-text{
+    margin-top: 15px;
+}
+
+.sign-text a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media(max-width:1050px){
+    .container .icon span i{
+        right: 30px;
+    }
+}
+
+@media(max-width:955px){
+    .box-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .image img{
+        width: 270px;
+        height: 80.3vh;
+    }
+
+    .sign-container{
+        width: 80%;
+    }
+}
+
+@media(max-width:773px){
+    .box-container{
+        width: 100%;
+    }
+
+    .box-1{
+        padding: 10px;
+        width: 50vh;
+    }
+
+    .sign-container{
+        width: 70%;
+    }
+
+    .box-2{
+        border-radius: 20px;
+    }
+
+    .image img{
+        width: 270px;
+        height: 79vh;
+    }
+}
+
+@media(max-width:700px){
+    .container .icon span i{
+        right: 0;
+    }
+}
+
+@media(max-width:635px){
+    body{
+        min-width: 100%;
+    }
+
+    .box-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sign-container{
+        width: 90%;
+    }
+}
+
+@media(max-width:616px){
+    .image img{
+        width: 250px;
+    }
+}
+
+@media(max-width:600px){
+
+    .box-1{
+        width: 50%;
+        height: 85vh;
+    }
+
+    .image img{
+        width: 200px;
+        height: 85vh;
+    }
+}
